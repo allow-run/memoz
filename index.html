@@ -1,1 +1,387 @@
-<!DOCTYPE html><html lang=zh-CN><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>On Sale</title><style>*{margin:0;padding:0}body,html{height:100%}.footer{margin-top:-150px;height:150px;background-color:#fff;z-index:9999;color:#333;font-size:.9rem;text-align:center;font-family:Arial}.wrap{min-height:100%}.main{padding-top:150px;display:flex;justify-content:center;align-items:center;width:auto;background:#fff}.logo{color:#000;font-size:3rem}.switch_box{display:-webkit-box;display:-ms-flexbox;display:flex;max-width:100%;min-width:100px;height:100px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-flex:1;-ms-flex:1;flex:1}.box_3{background:#fff}.toggle_switch{width:100px;height:30px;border:none;outline:none;position:relative}input[type=checkbox].switch_3{-webkit-appearance:none;-moz-appearance:none;appearance:none;position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;cursor:pointer;outline:none;border:none;z-index:1}svg.checkbox .outer-ring{stroke-dasharray:375;stroke-dashoffset:375;-webkit-animation:resetRing .35s ease-in-out forwards;animation:resetRing .35s ease-in-out forwards}input[type=checkbox].switch_3:checked+svg.checkbox .outer-ring{-webkit-animation:animateRing .35s ease-in-out forwards;animation:animateRing .35s ease-in-out forwards}input[type=checkbox].switch_3:checked+svg.checkbox .is_checked{opacity:1;-webkit-transform:translateX(0) rotate(0);transform:translateX(0) rotate(0)}input[type=checkbox].switch_3:checked+svg.checkbox .is_unchecked{opacity:0;-webkit-transform:translateX(-200%) rotate(180deg);transform:translateX(-200%) rotate(180deg)}svg.checkbox{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%}svg.checkbox .is_checked{opacity:0;fill:#fff;-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-transform:translateX(200%) rotate(45deg);transform:translateX(200%) rotate(45deg);-webkit-transition:all .35s;transition:all .35s}svg.checkbox .is_unchecked{opacity:1;fill:#000;-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-transform:translateX(0) rotate(0);transform:translateX(0) rotate(0);-webkit-transition:all .35s;transition:all .35s}@-webkit-keyframes animateRing{to{stroke-dashoffset:0;stroke:#b0aa28}}@keyframes animateRing{to{stroke-dashoffset:0;stroke:#555}}@-webkit-keyframes resetRing{to{stroke-dashoffset:0;stroke:#555}}@keyframes resetRing{to{stroke-dashoffset:0;stroke:#555}}[data-theme=dark]{background-color:#000!important;color:#eee}[data-theme=dark] .main{background-color:#000!important;color:#eee}[data-theme=dark] .fa-microphone-alt{color:#fff}[data-theme=dark] .box_3{background-color:#000!important;color:#eee}[data-theme=dark] .footer{background-color:#000!important;color:#eee}</style><link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet"><script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script><script src="https://cdn.bootcss.com/moment.js/2.24.0/moment-with-locales.min.js"></script></head><body><div class="wrap"><div class="main"><div class="logo"><i class="fas fa-microphone-alt"></i></div><div></div></div></div><div class="footer"><div class="switch_box box_3"><div class="toggle_switch"><input type="checkbox" class="switch_3" id="darkSwitch"><svg class="checkbox" xmlns="http://www.w3.org/2000/svg" style="isolation:isolate" viewBox="0 0 168 80"><path class="outer-ring" d="M41.534 9h88.932c17.51 0 31.724 13.658 31.724 30.482 0 16.823-14.215 30.48-31.724 30.48H41.534c-17.51 0-31.724-13.657-31.724-30.48C9.81 22.658 24.025 9 41.534 9z" fill="none" stroke="#233043" stroke-width="3" stroke-linecap="square" stroke-miterlimit="3"></path><path class="is_unchecked" d="M17 39.482c0-12.694 10.306-23 23-23s23 10.306 23 23-10.306 23-23 23-23-10.306-23-23z"></path><path class="is_checked" d="M132.77 22.348c7.705 10.695 5.286 25.617-5.417 33.327-2.567 1.85-5.38 3.116-8.288 3.812 7.977 5.03 18.54 5.024 26.668-.83 10.695-7.706 13.122-22.634 5.418-33.33-5.855-8.127-15.88-11.474-25.04-9.23 2.538 1.582 4.806 3.676 6.66 6.25z"></path></svg></div></div>Hosted by Github, Updated on <span class="updated" datetime="2019-12-20T17:00:00+08:00">2019-12-20T17:00:00+08:00</span></div><script type="text/javascript">$(document).ready(function(){moment.locale(""),$(".updated").each(function(t,e){var m=$(e);m.html(moment(m.attr("datetime")).fromNow())})});</script><script>!function(){var t,e=document.getElementById("darkSwitch");e&&(t=null!==localStorage.getItem("darkSwitch")&&"dark"===localStorage.getItem("darkSwitch"),(e.checked=t)?document.body.setAttribute("data-theme","dark"):document.body.removeAttribute("data-theme"),e.addEventListener("change",function(t){e.checked?(document.body.setAttribute("data-theme","dark"),localStorage.setItem("darkSwitch","dark")):(document.body.removeAttribute("data-theme"),localStorage.removeItem("darkSwitch"))}))}();</script></body></html>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>域名出售</title>
+<style>
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: #97cfca;
+  overflow: hidden;
+}
+.terminal-window {
+  text-align: left;
+  width: 37.5rem;
+  height: 22.5rem;
+  border-radius: .625rem;
+  margin: auto;
+  position: relative;
+  top: 10.5rem;
+}
+.terminal-window header {
+  background: #E0E8F0;
+  height: 1.875rem;
+  border-radius: .5rem .5rem 0 0;
+  padding-left: .625rem;
+}
+.terminal-window header .button {
+  width: .75rem;
+  height: .75rem;
+  margin: .625rem .25rem 0 0;
+  display: inline-block;
+  border-radius: .5rem;
+}
+.terminal-window header .button.green {
+  background: #3BB662;
+}
+.terminal-window header .button.yellow {
+  background: #E5C30F;
+}
+.terminal-window header .button.red {
+  background: #E75448;
+}
+.terminal-window section.terminal {
+  color: white;
+  font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+  font-size: 11pt;
+  background: #30353A;
+  padding: .625rem;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 1.875rem;
+  bottom: 0;
+  overflow: auto;
+}
+.terminal-window section.terminal .typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+.terminal-data { display: none; }
+.terminal-window .gray { color: gray; }
+.terminal-window .green { color: green;}
+/*Media for mobile responsive viewing*/
+@media only screen and (max-width: 600px) {
+.terminal-window {
+  text-align: left;
+  width: 37.5vmin;
+  height: 22.5vmin;
+  border-radius: .625vmin;
+  margin: auto;
+  position: relative;
+  top: 30.5vmin;
+}
+}
+@media only screen and (max-width: 600px) {
+.terminal-window header {
+  background: #E0E8F0;
+  height: 1.875vmin;
+  border-radius: .5vmin .5vmin 0 0;
+  padding-left: 1vmin;
+}
+}
+@media only screen and (max-width: 600px) {
+.terminal-window header .button {
+  width: .75vmin;
+  height: .75vmin;
+  margin: .625vmin .25vmin 0 0;
+  display: inline-block;
+  border-radius: .5vmin;
+}
+}
+@media only screen and (max-width: 600px) {
+.terminal-window header .button.green {
+  background: #3BB662;
+}
+}
+@media only screen and (max-width: 600px) {
+.terminal-window header .button.yellow {
+  background: #E5C30F;
+}
+}
+@media only screen and (max-width: 600px) {
+.terminal-window header .button.red {
+  background: #E75448;
+}
+}
+@media only screen and (max-width: 600px) {
+.terminal-window section.terminal {
+  color: white;
+  font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+  font-size: .6875vmin;
+  background: #30353A;
+  padding: .625vmin;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 1.875vmin;
+  bottom: 0;
+  overflow: auto;
+}
+}
+.terminal-window section.terminal .typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+.terminal-data { display: none; }
+.terminal-window .gray { color: gray; }
+.terminal-window .green { color: green;}
+</style>
+</head>
+<body>
+
+<div id="particles-js"></div>
+<div class="terminal-window">
+  <header>
+    <div class="button green"></div>
+    <div class="button yellow"></div>
+    <div class="button red"></div>
+  </header>
+  <section class="terminal">
+    <div class="history"></div>
+    $&nbsp;<span class="prompt"></span>
+    <span class="typed-cursor"></span>
+    
+  </section>
+</div>
+<!-- data -->
+  <div class="terminal-data mimik-run-output">
+ <br>Found 1 feature<br>
+ ----------------------------------------------<br>
+ Feature: Bottles  <span class="gray"># ./features/bottles.feature</span><br><br> 
+
+ &nbsp;&nbsp;Scenario: A bottle falls from the wall<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="green">✓</span> <span class="gray">Given 100 green bottles are standing</span><br>
+ &nbsp;&nbsp;&nbsp;&nbsp;<span class="green">✓</span> <span class="gray">when 1 green bottle accidentally falls</span><br>
+ &nbsp;&nbsp;&nbsp;&nbsp;<span class="green">✓</span> <span class="gray">then there are 99 green bottles standing</span><br>
+ <br>
+    <span class="gray">&nbsp;---------- ----------- ------- -------- --------</span><br>
+&nbsp;&nbsp;Features&nbsp;&nbsp;&nbsp;Scenarios&nbsp;&nbsp;&nbsp;Steps&nbsp;&nbsp;&nbsp;Passed&nbsp;&nbsp;&nbsp;Failed<br>
+    <span class="gray">&nbsp;---------- ----------- ------- -------- --------</span><br>
+&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">✓ 4</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0      <br>
+  <br>
+&nbsp;&nbsp;Completed 1 feature in 0.01s<br>
+  <br>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src='/js/typed.custom.js'></script>
+<script src="https://cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+    
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 155,
+      "density": {
+        "enable": true,
+        "value_area": 789.1476416322727
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.48927153781200905,
+      "random": false,
+      "anim": {
+        "enable": true,
+        "speed": 1,
+        "opacity_min": 0,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 2,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 2,
+        "size_min": 0,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 0.2,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 83.91608391608392,
+        "size": 1,
+        "duration": 3,
+        "opacity": 1,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+$(function() {
+  var data = [
+    {
+      action: 'type',
+      strings: ["Accessing restricted files.."],
+      output: 'grabbing files..<br><br>',
+      postDelay: 1000
+    },
+  { 
+    action: 'type',
+    strings: ["Query"],
+    output: '<span class="gray">此域名出售中，请联系管理员。</><br>&nbsp;',
+    postDelay: 1000
+  },
+  { 
+    action: 'type',
+    strings: ["This domain name is for sale, please contact the administrator.", 'The transaction has been initiated in mi.aliyun.com. You can buy it directly...'],
+    postDelay: 2000
+  }
+  
+];
+  runScripts(data, 0);
+});
+function runScripts(data, pos) {
+    var prompt = $('.prompt'),
+        script = data[pos];
+    if(script.clear === true) {
+      $('.history').html(''); 
+    }
+    switch(script.action) {
+        case 'type':
+          // cleanup for next execution
+          prompt.removeData();
+          $('.typed-cursor').text('');
+          prompt.typed({
+            strings: script.strings,
+            typeSpeed: 30,
+            callback: function() {
+              var history = $('.history').html();
+              history = history ? [history] : [];
+              history.push('$ ' + prompt.text());
+              if(script.output) {
+                history.push(script.output);
+                prompt.html('');
+                $('.history').html(history.join('<br>'));
+              }
+              // scroll to bottom of screen
+              $('section.terminal').scrollTop($('section.terminal').height());
+              // Run next script
+              pos++;
+              if(pos < data.length) {
+                setTimeout(function() {
+                  runScripts(data, pos);
+                }, script.postDelay || 1000);
+              }
+            }
+          });
+          break;
+        case 'view':
+          break;
+    }
+}
+</script>
+
+</body>
+</html>
